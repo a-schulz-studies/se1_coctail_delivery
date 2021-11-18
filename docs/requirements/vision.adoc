@@ -1,18 +1,18 @@
 = Vision: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Alexander Schulz <alexander.schulz@htw-dresden.de;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des <Projektname-Systems> zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das <Projektname-System> diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des <{project-name}-Systems> zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das <{project-name}-System> diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das <Projektthema-System>, das von <Team> entwickelt wird. Das System wird es <Zielkunde/Auftraggeber> erlauben, <Hauptfunktionen> zu nutzen, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
+Dieses Visions-Dokument bezieht sich auf das <{project-name}-System>, das von <Alexander Schulz> entwickelt wird. Das System wird dem es <Barbetreiber> Cocktails mittels eines Onlineshops zu versenden und damit besser auf die Wünsche seiner Kunden eingehen zu können.
 
 === Definitionen, Akronyme und Abkürzungen
 // Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -24,31 +24,17 @@ Siehe <<#glossary, Glossar>>.
 
 == Positionierung
 === Fachliche Motivation
-//Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
+Es soll ein Onlineshop für Privatkunden erstellt werden. In diesem sollen Standardcocktails oder auch individuell erstellte Cocktails bestellt werden können. Damit möchte der Barbetreiber besser auf die Bedürfnisse seiner Kunden eingehen und eine größere Reichweite erlangen. 
 
 === Problem Statement
-//Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
-
 
 [cols="1,3"]
 |===
-|Das Problem |	[beschreiben Sie das Problem]
-|betrifft |	[die Stakeholder, die vom Problem betroffen sind]
-|die Auswirkung davon ist |	[welche Auswirkungen hat das Problem?]
-|eine erfolgreiche Lösung wäre |	[Führen Sie einige wesentliche Vorteile einer erfolgreichen Lösung auf]
+|Das Problem    |keine Online-Präsenz zu haben,
+|betrifft   |den Barbetreiber
+|die Auswirkung davon ist   |dass die Bedürfnisse seiner Kunden nicht erfüllt werden können
+|eine erfolgreiche Lösung wäre  |ein Webshop bei dem Kunden Standardcocktails und individuell erstellte Cocktails bestellen können.
 |===
-
-////
-Beispiel
-
-[cols="1,3"]
-|===
-|Das Problem | aktuelle Informationen zum Stundenplan und Noten einfach zu erhalten
-|betrifft |	Studierende der HTW Dresden
-|die Auswirkung davon ist |	umständliche und aufwändige Suche nach Noten, Zeiten und Räumen
-|eine erfolgreiche Lösung wäre |	die Zusammenführung und benutzer-individuelle Darstellung auf einem mobilen Endgerät
-|===
-////
 
 === Positionierung des Produkts
 //Ein Positionierung des Produkts beschreibt das Einsatzziel der Anwendung und die Bedeutung das Projekts an alle beteiligten Mitarbeiter.
@@ -57,12 +43,12 @@ Beispiel
 
 [cols="1,3"]
 |===
-|Für|	[Zielkunde / Nutzer]
-|der / die|	[Angabe des Bedarfs oder Chance]
-|Das Produkt / die Lösung ist ein | [Produktkategorie]
-|Die / Das	|[Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
-|Im Gegensatz zu	|[wesentliche Lösungsalternative]
-|Unser Produkt|	[Aussage zum Hauptunterschied]
+|Für    |Privatkunden ab 18 Jahren
+|der / die  |Cocktails online bestellen wollen
+|Das Produkt / die Lösung ist ein | Online-Shop
+|Die / Das	|immer zur Bestellung bereitsteht und bei de Cocktails individuell erstellt werden können.
+|Im Gegensatz zu	|lokalen Verkaufsstellen
+|Unser Produkt|individuellerstellte Cocktails
 |===
 
 
@@ -82,7 +68,33 @@ Beispiel
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-|[Benennung des Stakeholder-Typs.]	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+|Barbetreiber    
+|besitzt das Gewerbe und will seine Kunden an sich binden
+|Jugendschutzgesetz (Verkauf von Alkohol), Fernabsatzgesetz (Widerufsrecht)
+|===
+
+[%header, cols="1,3,3"]
+|===
+|Name|	Beschreibung	| Verantwortlichkeiten
+|Gesetzgeber    
+|[Kurze Beschreibung des Stakeholders.]	
+|Jugendschutzgesetz (Verkauf von Alkohol), Fernabsatzgesetz (Widerufsrecht)
+|===
+
+[%header, cols="1,3,3"]
+|===
+|Name|	Beschreibung	| Verantwortlichkeiten
+|Webhoster    
+|[Kurze Beschreibung des Stakeholders.]	
+| Geschwindigkeit, Backup, Speicherplatz, Services
+|===
+
+[%header, cols="1,3,3"]
+|===
+|Name|	Beschreibung	| Verantwortlichkeiten
+|Versandunternehmen    
+|Liefert die Ware aus und liefert Zutaten	
+|Wird der Lieferant direkt an das System angebunden oder wird dieser nur vom Barbetreiber benachrichtigt? (Dann kein Stakeholder)
 |===
 
 === Benutzerumgebung
@@ -111,6 +123,9 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 
 == Zusätzliche Produktanforderungen
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+
+Die Seite sollte schnell geladen werden, damit Kunden zufrieden sind und nicht wegen langer Ladezeiten die Seite verlassen.
+
 Hinweise:
 
 . Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
