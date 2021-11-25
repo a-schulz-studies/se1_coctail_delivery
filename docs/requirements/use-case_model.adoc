@@ -1,5 +1,5 @@
 = Use-Case Model: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Alexander Schulz <alexander.schulz@htw-dresden.de;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -7,11 +7,34 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 // ...
+*Stakeholder*
+
+*  Kunde
+*  Barbetreiber
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: ...
-* *UC02*: ...
+* *Akteur: Kunde*
+** *UC##*: *"Bestellung aufgeben"*
+** *UC##*: "Produkte anzeigen"
+** *UC##*: "Produktseite aufrufen"
+** *UC##*: "Konfigurieren von Cocktails"
+** *UC##*: "Kundenkonto erstellen/bearbeiten"
+** *UC##*: "Passwort vergessen"
+** *UC##*: "Newsletter an-/abmelden"
+** *UC##*: "Produkte bewerten"
+** *UC##*: "Bestellung stornieren"
+
+* *Akteur: Barbetreiber*
+** *UC##*: *"Bestellung einsehen"*
+*** Bestellung filtern
+*** Bestellstatus ändern
+** *UC##*: "Internen Bereich anmelden"
+** *UC##*: "Produkte anzeigen"
+** *UC##*: "Produktkatalog bearbeiten - zu aufwendig"
+** *UC##*: "Produkte deaktivieren"
+** *UC##*: "Angebote erstellen"
+** *UC##*: "Email-Benachrichtigung erstellen"
 
 == Use Case Diagramm
 // ...
@@ -20,8 +43,8 @@ include::../_includes/default-attributes.inc.adoc[]
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
 <<<
 include::use_case_01.inc.adoc[]
-//<<<
-//include::use_case_02.inc.adoc[]
+<<<
+include::use_case_02.inc.adoc[]
 //<<<
 //include::use_case_03.inc.adoc[]
 //<<<

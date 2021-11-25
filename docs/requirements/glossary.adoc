@@ -13,6 +13,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
+|Bestellstatus|Status in dem sich eine Bestellung befindet. (eingegangen, bezahlt, storniert, in Bearbeitung, abgeschlossen, versandt)|Status der Bestellung|
 |xx|xx|xx|
 |===
 
