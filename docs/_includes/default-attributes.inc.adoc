@@ -19,3 +19,4 @@ ifndef::imagesdir[:imagesdir: images]
 // Hyphenation for PDF dokumente
 :lang: DE
 :hyphens:
+:emails: Alexander Schulz <alexander.schulz@htw-dresden.de>

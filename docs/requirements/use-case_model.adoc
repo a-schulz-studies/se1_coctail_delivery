@@ -12,6 +12,8 @@ include::../_includes/default-attributes.inc.adoc[]
 *  Kunde
 *  Barbetreiber
 
+// tag::uc-all[]
+[#uc-all]
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
 * *Akteur: Kunde*
@@ -35,7 +37,7 @@ include::../_includes/default-attributes.inc.adoc[]
 ** *UC##*: "Produkte deaktivieren"
 ** *UC##*: "Angebote erstellen"
 ** *UC##*: "Email-Benachrichtigung erstellen"
-
+// end::uc-all[]
 == Use Case Diagramm
 // ...
 
