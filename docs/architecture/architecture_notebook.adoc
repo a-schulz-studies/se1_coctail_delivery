@@ -1,5 +1,5 @@
 = Architecture Notebook: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Alexander Schulz <alexander.schulz@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -17,22 +17,53 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 
 //Formulieren Sie eine Reihe von Zielen, die die Architektur in ihrer Struktur und ihrem Verhalten erfüllen muss. Identifizieren Sie kritische Fragen, die von der Architektur adressiert werden müssen, z.B. besondere Hardware-Abhängigkeiten, die vom Rest des Systems isoliert werden sollten oder Sicherstellung der Funktionsfähigkeit unter besonderen Bedingungen (z.B. Offline-Nutzung).
 
+// Hier gibt es keine neuen Anforderungen, alle müssen schon vorher gefunden worden sein und sollten im besten Fall nur durch IDs refferenziert werden
+
 
 == Annahmen und Abhängigkeiten
 //[List the assumptions and dependencies that drive architectural decisions. This could include sensitive or critical areas, dependencies on legacy interfaces, the skill and experience of the team, the availability of important resources, and so forth]
 
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
+Die nachfolgenden Anforderungen sind in den systemweiten Anforderungen beschrieben. (Es sind allerdings nur die relevant, die Auswirkungen auf das System haben)
+
+
+. Es muss eine Website entwickelt werden
+. Daten müssen persistent gespeichert werden -> Datenbanken
+. Berechtigung der Kunden muss überprüft werden -> Loginseite
+.. Überprüfung der Logindaten
+. nur gültige Emailadressen
+. Geschwindigkeit der Website max. 3sek
+. Mehrere Spachen müssen unterstützt werden
+
+. Alle Punkte aus den Systemweitenanforderungen zum Thema Effizenz
+
+* Die Software muss mit der Programmiersprache Java entwickelt werden.
+* Die Verwaltung des Sourcecodes und der Dokumentation muss mittels GitHub erfolgen.
+* Die Software muss in den Browsern Google Chrome und Mozilla Firefox lauffähig sein.
+* Die Softwarelösung soll nur einen handelsüblichen Computer benötigen, auf dem ein entsprechender Browser in der aktuellsten Version installiert ist.
+* Als Framework soll Spring genutzt werden.
+* Es muss eine Open-Source-Anwendung entwickelt werden.
+* Der Kunde muss über eine mögliche Speicherung von Nutzungsdaten informiert werden.
+* Der Kunde muss über seine Rechte beim Einsatz von Cookies informiert werden
 
 
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
+Webserver, der Seitencaching erfüllt -> damit wird die Anforderung zur Effizienz erfüllt
+*Hier stehen die Entscheidungen*
+. Webserver -> ist eine Anforderung des Stakeholders
+. Python -> weil es schon bestehenden Code gibt
+. Webframework(Django) -> damit wir den bestehenden Code weiterverwenden können
+. Typescript -> weil wir es schon können
+. React -> damit eine hohe Benutzerfreundlichkeit gewährleistet wird
+(Begründungen fehlen noch)
 
-. Entscheidung oder Einschränkung oder Begründung 1
 
-. Entscheidung oder Einschränkung oder Begründung 2
-
-
+*Konsequenz*
+Wir arbeiten alle mit Python
+.. Es gibt schon bestehenden Code
+.. Wir haben schon Erfahrungen damit
 == Architekturmechanismen
 https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
 //[List the architectural mechanisms and describe the current state of each one. Initially, each mechanism may be only name and a brief description. They will evolve until the mechanism is a collaboration or pattern that can be directly applied to some aspect of the design.]
@@ -40,11 +71,10 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 //Beispiele: relationales DBMS, Messaging-Dienste, Transaktionsserver, Webserver, Publish-Subscribe Mechanismus
 
 //Beschreiben Sie den Zweck, Eigenschaften und Funktion der Architekturmechanismen.
-
-. Architekturmechanismus 1
-
-. Architekturmechanismus 2
-
+* Persistenz -> Daten sollen persistenz gespeichert werden
+* Transaktionsmanagement -> Logging Dateien, Backup/Rollback soll möglich sein
+* Sicherheit -> Persönliche Daten von den Mitgliedern des Studentenrat
+* GUI (React) -> einfache Bedinbarkeit 
 
 == Wesentliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
